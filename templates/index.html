@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Data Dashboard</h1>
+
+        {% if weather_data.error %}
+            <p class="error">Error: {{ weather_data.error }}</p>
+        {% else %}
+            <h2>Current Weather Information</h2>
+            {% for city in weather_data %}
+                <div class="city-card">
+                    <h3>City: {{ city.name }}</h3>
+                    <p>Temperature: {{ city.main.temp }}°F</p>
+                    <p>Weather: {{ city.weather[0].description }}</p>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+</body>
+</html>
