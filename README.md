@@ -157,6 +157,8 @@ On terminal, you should see something like:
 > <img width="936" alt="Screenshot 2025-01-08 at 14 58 13" src="https://github.com/user-attachments/assets/c875861e-b738-4f15-809e-3895c3d1a1d2" />
 
 To view on the web browser, open `http://127.0.0.1:5000/`
+> <img width="1512" alt="Screenshot 2025-01-08 at 18 22 40" src="https://github.com/user-attachments/assets/ed971ef7-7cf8-4403-a019-5e04af16aaef" />
+
 
 
 ## What I Learned
