@@ -161,7 +161,13 @@ To view on the web browser, open `http://127.0.0.1:5000/`
 
 <br>
 
-**However, this project has been dockerized, to see how to run it with docker, [click here](url)**
+**However, this project has been dockerized, to see how to run it with docker, check this [article](https://dev.to/nonso_echendu_001/building-a-weather-dashboard-app-with-docker-flask-open-weather-api-and-aws-s3-117a) i wrote**
+
+<br/>
+
+<hr/>
+
+
 
 ## What I Learned
 
