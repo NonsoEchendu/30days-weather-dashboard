@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
-    <!-- Link to the external CSS file -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="static/script.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>Weather Data Dashboard</h1>
+
+        <div class="search-bar">
+            <form method="POST" action="/add_weather">
+                <input type="text" name="city" placeholder="Enter city name" required>
+                <button type="submit">Add City</button>
+            </form>
+        </div>
 
         {% if weather_data.error %}
             <p class="error">Error: {{ weather_data.error }}</p>
