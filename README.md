@@ -149,11 +149,12 @@ python3 src/weather_dashboard.py
 ```
 
 You should see something like:
+> <img width="936" alt="Screenshot 2025-01-08 at 14 58 13" src="https://github.com/user-attachments/assets/c875861e-b738-4f15-809e-3895c3d1a1d2" />
 
-<img width="1291" alt="Screenshot 2025-01-08 at 14 39 28" src="https://github.com/user-attachments/assets/63c2b0f9-f97d-4b4e-a664-a28e8fba2dda" />
 
 
-What I Learned
+
+##What I Learned
 
 AWS S3 bucket creation and management
 Environment variable management for secure API keys
@@ -162,7 +163,7 @@ Git workflow for project development
 Error handling in distributed systems
 Cloud resource management
 
-Future Enhancements
+##Future Enhancements
 
 Add weather forecasting
 Implement data visualization
