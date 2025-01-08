@@ -161,7 +161,7 @@ To view on the web browser, open `http://127.0.0.1:5000/`
 
 <br>
 
-However, this project has been dockerized, to see how to run it with docker, [click here](url)
+**However, this project has been dockerized, to see how to run it with docker, [click here](url)**
 
 ## What I Learned
 
