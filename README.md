@@ -30,14 +30,87 @@ This project is a Weather Data Collection System that demonstrates core DevOps p
   - python-dotenv
   - requests
 
+## Prerequisites
+
+**Note these guides are based on running this project on an Ubuntu Linux machine**
+- AWS Cli
+- python3
+- pip3
+
+**1. Installing AWS Cli**
+
+To install AWS, run
+
+```markdown
+sudo apt update
+sudo apt install awscli
+```
+
+To verify installation, run
+
+```markdown
+aws --version
+```
+
+You should see output like:
+
+```markdown
+aws-cli/2.x.x Python/3.x.x Linux/x86_64
+```
+**2. Installing Python3**
+
+To install AWS, run
+
+```markdown
+sudo apt update
+sudo apt install python3
+```
+
+To verify installation, run
+
+```markdown
+python3 --version
+```
+
+You should see output like:
+
+```markdown
+Python 3.8.10
+```
+
+**3. Installing pip3**
+
+To install AWS, run
+
+```markdown
+sudo apt update
+sudo apt install python3-pip
+```
+
+To verify installation, run
+
+```markdown
+pip3 --version
+```
+
+You should see output like:
+
+```markdown
+pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
+```
+
 ```markdown
 ## Project Structure
 weather-dashboard/
+  data/
+    cities.json
   src/
     __init__.py
     weather_dashboard.py
-  tests/
-  data/
+  static/
+    style.css
+  templates/
+    index.html
   .env
   .gitignore
   requirements.txt
@@ -45,20 +118,31 @@ weather-dashboard/
 ## Setup Instructions
 1. Clone the repository:
 --bash
-git clone https://github.com/ShaeInTheCloud/30days-weather-dashboard.git
+git clone https://github.com/NonsoEchendu/30days-weather-dashboard.git
+
+2. Change directory
+--bash
+cd 30days-weather-dashboard
 
 3. Install dependencies:
-bashCopypip install -r requirements.txt
+--bash
+pip install -r requirements.txt
 
 4. Configure environment variables (.env):
-CopyOPENWEATHER_API_KEY=your_api_key
+OPENWEATHER_API_KEY=your_api_key
 AWS_BUCKET_NAME=your_bucket_name
 
 4.Configure AWS credentials:
-bashCopyaws configure
+--bash
+aws configure
 
 5. Run the application:
-python src/weather_dashboard.py
+--bash
+python3 src/weather_dashboard.py
+
+You should see something like:
+
+
 
 What I Learned
 
