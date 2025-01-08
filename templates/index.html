@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <script src="static/script.js"></script>
+    <script src="../static/script.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>Weather Data Dashboard</h1>
 
         <div class="search-bar">
-            <form method="POST" action="/add_weather">
-                <input type="text" name="city" placeholder="Enter city name" required>
+            <form id="searchForm" class="search-container">
+                <input type="text" id="citySearch" placeholder="Enter city name" required>
                 <button type="submit">Add City</button>
             </form>
         </div>
@@ -31,5 +31,27 @@
             {% endfor %}
         {% endif %}
     </div>
+
+    <script>
+        document.getElementById('searchForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const city = document.getElementById('citySearch').value;
+            
+            try {
+                const response = await fetch('/add_city', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json', // Ensure this header is set
+                    },
+                    body: JSON.stringify({ city })
+                });
+                
+                if (!response.ok) throw new Error('Search failed');
+                location.reload();
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        });
+    </script>
 </body>
 </html>

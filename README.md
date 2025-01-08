@@ -21,6 +21,11 @@ This project is a Weather Data Collection System that demonstrates core DevOps p
 - Supports multiple cities tracking
 - Timestamps all data for historical tracking
 
+## MODIFICATIONS
+- Containerize app using Docker
+- Using Flask, display weather data on a webpage
+- Users can search cities and see results
+
 ## Technical Architecture
 - **Language:** Python 3.x
 - **Cloud Provider:** AWS (S3)

@@ -4,9 +4,19 @@ import boto3
 import requests
 from datetime import datetime
 from dotenv import load_dotenv
+from flask import Flask
+from flask_cors import CORS
 
 # Load environment variables
 load_dotenv()
+
+app = Flask(__name__)
+CORS(app)
+
+s3 = boto3.client('s3',
+    aws_access_key_id=os.getenv('AWS_ACCESS_KEY'),
+    aws_secret_access_key=os.getenv('AWS_SECRET_KEY')
+)
 
 class WeatherDashboard:
     def __init__(self):
