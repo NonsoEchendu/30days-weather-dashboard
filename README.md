@@ -24,7 +24,7 @@ This project is a Weather Data Collection System that demonstrates core DevOps p
 ## MODIFICATIONS
 - Containerize app using Docker
 - Using Flask, display weather data on a webpage
-- Users can search cities and see results
+- Users can search for cities and see results
 
 ## Technical Architecture
 - **Language:** Python 3.x
@@ -41,6 +41,7 @@ This project is a Weather Data Collection System that demonstrates core DevOps p
 - AWS Cli
 - python3
 - pip3
+- flask
 
 **1. Installing AWS Cli**
 
@@ -107,8 +108,6 @@ pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
 ## Project Structure
 ```markdown
 weather-dashboard/
-  data/
-    cities.json
   src/
     __init__.py
     weather_dashboard.py
@@ -116,6 +115,7 @@ weather-dashboard/
     style.css
   templates/
     index.html
+  app.py
   .env
   .gitignore
   requirements.txt
@@ -150,11 +150,13 @@ aws configure
 
 6. Run the application:
 ```markdown
-python3 src/weather_dashboard.py
+python3 app.py
 ```
 
-You should see something like:
+On terminal, you should see something like:
 > <img width="936" alt="Screenshot 2025-01-08 at 14 58 13" src="https://github.com/user-attachments/assets/c875861e-b738-4f15-809e-3895c3d1a1d2" />
+
+To view on the web browser, open `http://127.0.0.1:5000/`
 
 
 ## What I Learned
