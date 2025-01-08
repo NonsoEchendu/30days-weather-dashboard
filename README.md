@@ -142,7 +142,10 @@ python3 src/weather_dashboard.py
 
 You should see something like:
 
+> <img width="1291" alt="Screenshot 2025-01-08 at 14 39 28" src="https://github.com/user-attachments/assets/63c2b0f9-f97d-4b4e-a664-a28e8fba2dda" />
 
+
+```
 
 What I Learned
 
