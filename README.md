@@ -99,8 +99,8 @@ You should see output like:
 pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
 ```
 
-```markdown
 ## Project Structure
+```markdown
 weather-dashboard/
   data/
     cities.json
@@ -114,38 +114,44 @@ weather-dashboard/
   .env
   .gitignore
   requirements.txt
+```
 
 ## Setup Instructions
 1. Clone the repository:
---bash
+```markdown
 git clone https://github.com/NonsoEchendu/30days-weather-dashboard.git
+```
 
 2. Change directory
---bash
+```markdown
 cd 30days-weather-dashboard
+```
 
 3. Install dependencies:
---bash
+```markdown
 pip install -r requirements.txt
+```
 
 4. Configure environment variables (.env):
+```markdown
 OPENWEATHER_API_KEY=your_api_key
 AWS_BUCKET_NAME=your_bucket_name
+```
 
-4.Configure AWS credentials:
---bash
+5.Configure AWS credentials:
+```markdown
 aws configure
+```
 
-5. Run the application:
---bash
+6. Run the application:
+```markdown
 python3 src/weather_dashboard.py
+```
 
 You should see something like:
 
-> <img width="1291" alt="Screenshot 2025-01-08 at 14 39 28" src="https://github.com/user-attachments/assets/63c2b0f9-f97d-4b4e-a664-a28e8fba2dda" />
+<img width="1291" alt="Screenshot 2025-01-08 at 14 39 28" src="https://github.com/user-attachments/assets/63c2b0f9-f97d-4b4e-a664-a28e8fba2dda" />
 
-
-```
 
 What I Learned
 
