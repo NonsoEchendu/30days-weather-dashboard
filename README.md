@@ -38,6 +38,7 @@ This project is a Weather Data Collection System that demonstrates core DevOps p
 ## Prerequisites
 
 **Note these guides are based on running this project on an Ubuntu Linux machine**
+- API key from [OpenWeatherMap](https://openweathermap.org/)
 - AWS Cli
 - python3
 - pip3
